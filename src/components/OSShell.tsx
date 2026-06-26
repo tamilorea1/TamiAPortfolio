@@ -1,3 +1,5 @@
+import { Sidebar } from "./Sidebar";
+
 export function OSShell({ children }: { children: React.ReactNode }) {
   return (
     // flex-col stacks children vertically. h-full fills the viewport height.
@@ -25,7 +27,7 @@ export function OSShell({ children }: { children: React.ReactNode }) {
       {/* min-h-0 is the trick that lets flex children scroll properly inside a flex-col */}
       <div className="flex flex-1 min-h-0">
         <aside className="w-[180px] bg-shell-deep border-r border-shell-border shrink-0">
-          {/* <Sidebar /> goes here */}
+          <Sidebar />
         </aside>
         <main className="flex-1 bg-shell-bg overflow-auto">
           {children}
