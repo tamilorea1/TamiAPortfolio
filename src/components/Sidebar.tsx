@@ -75,7 +75,8 @@ export function Sidebar() {
         <div className="w-14 h-14 rounded-full bg-green flex items-center justify-center mb-2">
           <span className="text-shell-bg text-xl font-bold">T</span>
         </div>
-        <p className="text-xs text-shell-text">tamilore</p>
+        <p className="text-xs text-shell-text">tamilore akinfemi</p>
+        <p className="text-[10px] text-green">&gt; ta-me-loh-reh</p>
         <p className="text-[10px] text-green">&gt; cloud_security_eng.exe</p>
       </div>
 
