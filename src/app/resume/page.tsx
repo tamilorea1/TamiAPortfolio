@@ -23,21 +23,21 @@ const experience = [
 
 const projects = [
   {
+    name: "Honeytoken Monitor",
+    stack: "AWS, Terraform, Node.js, TypeScript, Docker",
+    bullets: [
+      "Architected a deception-based intrusion detection system, provisioning a full AWS security stack: IAM, CloudTrail, CloudWatch, Lambda, SNS, DynamoDB, via a single Terraform command with remote state locking.",
+      "Engineered an event-driven detection pipeline (CloudTrail → CloudWatch → Lambda → SNS) that identifies unauthorized credential use and delivers real-time breach alerts within seconds.",
+      "Automated incident response (SOAR) by building a Lambda-based remediation layer that deactivates compromised credentials on trigger, and extended detection coverage with a decoy HTTP trap layer and a DynamoDB-backed breach dashboard.",
+    ],
+  },
+  {
     name: "Fantasy Basketball League Tracker",
     stack: "Next.js, Prisma, PostgreSQL, Supabase",
     bullets: [
       "Architected a full-stack drafting system as lead developer, reducing manual setup time by 70%.",
       "Built a high-concurrency data pipeline with 30+ simultaneous API calls to seed 500+ player profiles.",
       "Implemented secure session management via NextAuth, tripling concurrent user capacity.",
-    ],
-  },
-  {
-    name: "Cybersecurity Threat Analysis Dashboard",
-    stack: "React.js, Firebase, CISA API",
-    bullets: [
-      "Automated data validation checks, decreasing discrepancies by 20% and saving ~8 hrs/week.",
-      "Optimized cloud performance by 60% and resolved CORS issues via serverless Firebase Cloud Functions.",
-      "Decreased report generation time by 90% with a scalable, schema-validated export pipeline for 500+ records.",
     ],
   },
   {
@@ -61,7 +61,7 @@ export default function ResumePage() {
           <div className="flex items-center justify-between">
             <span className="text-xs text-shell-muted">~/resume.pdf</span>
             <a
-              href="/tamilore_akinfemi_resume.pdf"
+              href="/tamilore_akinfemi_SWE_resume_.pdf"
               download
               className="text-[10px] px-3 py-1 rounded border border-green text-green hover:bg-green/10 transition-colors"
             >
